@@ -13,10 +13,9 @@ function App() {
   const addMovie = (movie) => setList([...list, movie]);
 
   const removeMovie = (movie) => {
-    const newState = (list.filter = (m) => {
+    const newState = list.filter((m) => {
       return m !== movie;
     });
-
     setList(newState);
   };
 
